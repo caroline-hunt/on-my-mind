@@ -1,11 +1,12 @@
 import BlogNavbar from './BlogNavbar';
+import Post from './Post';
 
 function App() {
   return (
     <div className="App">
       <BlogNavbar/>
       <div className='content'>
-        <h1>App Component</h1>
+        <Post/>
       </div>
     </div>
   );
