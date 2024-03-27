@@ -16,12 +16,13 @@ function Post() {
         const formJson = Object.fromEntries(formData.entries());
         console.log(formJson);
 
-        // reset form 
+        // user confirmation of button click and reset form 
+        alert('Post Submitted!');
         e.target.reset();
     }
     return (
       <div className="Post">
-        < div class = "row">
+        < div className = "row">
             <Card className="text-center" style={{ width: '40rem' }} bg="light" text='dark' border="primary">
                 <Card.Header>Create a New Post!</Card.Header>
                 <Card.Body>

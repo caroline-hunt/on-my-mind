@@ -12,8 +12,8 @@ const BlogNavbar = () => {
             <Navbar.Toggle />
             <Navbar.Collapse className="justify-content-end">
               <Nav className="ms-auto">
-                <Nav.Link href="#home">Write a Post</Nav.Link>
-                <Nav.Link href="#link">Past Posts</Nav.Link>
+                <Nav.Link href="writepost">Write a Post</Nav.Link>
+                <Nav.Link href="pastposts">Past Posts</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
