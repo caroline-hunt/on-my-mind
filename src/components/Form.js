@@ -14,10 +14,19 @@ function Form() {
 
     const handleSubmit = e => {
         e.preventDefault()
-        window.sessionStorage.setItem('title',JSON.stringify(title))
-        window.sessionStorage.setItem('body',JSON.stringify(body))
-        setTitle('')
-        setBody('')
+        if (title && body){
+            var titleHistory = JSON.parse(window.localStorage.getItem('title')) || [];
+            titleHistory.push(title)
+            window.localStorage.setItem('title', JSON.stringify(titleHistory))
+
+            var bodyHistory = JSON.parse(window.localStorage.getItem('body')) || [];
+            bodyHistory.push(body)
+            window.localStorage.setItem('body', JSON.stringify(bodyHistory))
+
+            setTitle('')
+            setBody('')
+        }
+
     }
     return (
       <div className="Form">
