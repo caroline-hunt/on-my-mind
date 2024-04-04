@@ -17,4 +17,3 @@ function App() {
 }
 
 export default App;
- // have to create a seperate home component; only component 2 pages share is the navbar 
