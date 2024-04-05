@@ -1,5 +1,5 @@
-import BlogNavbar from '../components/BlogNavbar';
-import Post from '../components/Post';
+import BlogNavbar from '../components/javascript/BlogNavbar';
+import Post from '../components/javascript/Post';
 
 function WritePost() {
     return (
